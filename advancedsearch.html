@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            width: 100px;
+        }
+        #links {
+            border-bottom:1px solid rgb(167, 162, 162);
+        }
+        #links > a {
+            text-decoration: none;
+            font-size:17px;
+            padding:15px;
+            position: relative;
+            left: 1000px;
+            bottom: 30px;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: crimson;
+            font-size: 20px;
+            position: relative;
+            left: 30px;
+        }
+        #searchbars > input {
+            margin: 16px;
+            width: 600px;
+            height: 24px;
+        }
+        #searchbars{
+            margin: 30px;
+        }
+        .button{
+                border:1px solid rgb(31, 30, 30);
+                width: 190px;
+                height: 40px;
+                position: relative;
+                top: 20px;
+           }
+        .button:hover {
+            border:1px solid grey;
+            border-radius: 3px;
+            box-shadow: 1px 1px 2px grey;
+           }
+    </style>
+</head>
+<body>
+    <div id="links">
+        <img src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="logo">
+        <a href="index.html">Google</a>
+        <a href="img.html">Google Images</a>
+        <p>Advanced Search<p>
+    </div>
+    <div class="container">
+        <form action="https://www.google.com/search">
+            <div id="searchbars">
+                <h3>Find pages with...</h3>
+                    all these words: <input type="text" name="as_q"><br>
+                    this exact word or phrase: <input type="text" name="as_epq"><br>
+                    any of these words: <input type="text" name="as_oq"><br>
+                    none of these words: <input type="text" name="as_eq"><br>
+                    <p><input type="submit" class="button" value="Advanced search"></p>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>
